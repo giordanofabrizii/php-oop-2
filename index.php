@@ -8,6 +8,8 @@ require_once __DIR__ . '/classes/products/Gioco.php';
 require_once __DIR__ . '/classes/products/Cibo.php';
 require_once __DIR__ . '/utilities/db.php';
 
+var_dump($allProducts);
+
 ?>
 
 <!DOCTYPE html>

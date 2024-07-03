@@ -15,3 +15,5 @@ $voliera = new Accessorio($uccello, 'Voliera Wilma in Legno', '184,99','Legno','
 $cartucce = new Accessorio($pesce, 'Cartucce Filtranti per Filtro EasyCrystal', '2,29','https://arcaplanet.vtexassets.com/arquivos/ids/272741/tetra-easycrystal-filterpack-250-300.jpg','Materiale espanso', 'ND');
 $kong = new Gioco($cane, 'Kong Classic', '13,49','https://arcaplanet.vtexassets.com/arquivos/ids/256599/kong-classic1.jpg','Galleggia e rimablza', '8,5 cm x 10 cm');
 $mouse = new Gioco($gatto, 'Topini di peluche Trixie', '4,99','https://arcaplanet.vtexassets.com/arquivos/ids/223852/trixie-gatto-gioco-active-mouse-peluche.jpg','Morbido con codina in corda', '8,5 cm x 10 cm');
+
+$allProducts = Prodotto::all();
