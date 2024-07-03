@@ -14,6 +14,42 @@ class Prodotto {
         $this->foto = $foto;
         self::$instances[] = $this;
     }
+    
+    /**
+     * Return the animal name of the product
+     *
+     * @return string
+     */
+    public function getAnimale(){
+        return $this->animale;
+    }
+
+    /**
+     * Return the name of the product
+     *
+     * @return string
+     */
+    public function getNome(){
+        return $this->nome;
+    }
+
+    /**
+     * Return the prezzo of the product
+     *
+     * @return string
+     */
+    public function getPrezzo(){
+        return $this->prezzo;
+    }
+
+    /**
+     * Return the foto of the product
+     *
+     * @return string
+     */
+    public function getFoto(){
+        return $this->foto;
+    }
 
     public static function all() {
         return self::$instances;

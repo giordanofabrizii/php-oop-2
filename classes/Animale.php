@@ -2,19 +2,28 @@
 
 class Animale {
     private $icon;
-    private $animal;
+    private $species;
 
-    public function __construct($animal, $icon) {
-        $this->animal = $animal;
+    public function __construct($icon, $species) {
         $this->icon = $icon;
+        $this->species = $species;
     }
 
     /**
-     * return the animal parameter
+     * Return the icon classes of the animal
      *
      * @return string
      */
-    public function getAnimal(){
-        return this->animal;
+    public function getIcon(){
+        return $this->icon;
+    }
+
+    /**
+     * Return the species of the animal
+     *
+     * @return string
+     */
+    public function getSpecies(){
+        return $this->species;
     }
 }
