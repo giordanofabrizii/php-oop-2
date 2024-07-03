@@ -1,14 +1,11 @@
 <?php 
 
-class Accessorio {
-    private $nome;
-    private $prezzo;
+class Accessorio extends Prodotto {
     private $materiale;
     private $dimensioni;
 
-    public function __construct($prezzo, $materiale, $dimensioni) {
-        $this->nome = $nome;
-        $this->prezzo = $prezzo;
+    public function __construct($animale, $nome, $prezzo, $foto, $materiale, $dimensioni) {
+        parent::__construct($animale, $nome, $prezzo);
         $this->materiale = $materiale;
         $this->dimensioni = $dimensioni;
     }

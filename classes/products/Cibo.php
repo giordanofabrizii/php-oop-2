@@ -1,14 +1,11 @@
 <?php 
 
-class Cibo {
-    private $nome;
-    private $prezzo;
+class Cibo extends Prodotto {
     private $peso;
     private $ingredienti;
 
-    public function __construct($nome, $prezzo, $peso, $ingredienti) {
-        $this->nome = $nome;
-        $this->prezzo = $prezzo;
+    public function __construct($animale, $nome, $prezzo, $foto, $peso, $ingredienti) {
+        parent::__construct($animale, $nome, $prezzo);
         $this->peso = $peso;
         $this->ingredienti = $ingredienti;
     }

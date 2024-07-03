@@ -1,15 +1,12 @@
 <?php 
 
-class Gioco {
-    private $nome;
-    private $prezzo;
+class Gioco extends Prodotto {
     private $caratteristiche;
-    private $ingredienti;
+    private $dimensioni;
 
-    public function __construct($nome, $prezzo, $caratteristiche, $ingredienti) {
-        $this->nome = $nome;
-        $this->prezzo = $prezzo;
+    public function __construct($animale, $nome, $prezzo, $foto, $caratteristiche, $dimensioni) {
+        parent::__construct($animale, $nome, $prezzo);
         $this->caratteristiche = $caratteristiche;
-        $this->ingredienti = $ingredienti;
+        $this->dimensioni = $dimensioni;
     }
 }

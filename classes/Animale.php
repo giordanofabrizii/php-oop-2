@@ -1,10 +1,12 @@
 <?php 
 
-class Categoria {
+class Animale {
+    private $icon;
     private $animal;
 
-    public function __construct($animal) {
+    public function __construct($animal, $icon) {
         $this->animal = $animal;
+        $this->icon = $icon;
     }
 
     /**

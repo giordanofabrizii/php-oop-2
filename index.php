@@ -1,4 +1,14 @@
-<?php  ?>
+<?php 
+
+// < import section
+require_once __DIR__ . '/classes/Animale.php';
+require_once __DIR__ . '/classes/Prodotto.php';
+require_once __DIR__ . '/classes/products/Accessorio.php';
+require_once __DIR__ . '/classes/products/Gioco.php';
+require_once __DIR__ . '/classes/products/Cibo.php';
+require_once __DIR__ . '/utilities/db.php';
+
+?>
 
 <!DOCTYPE html>
 <html lang="it">
